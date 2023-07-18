@@ -1,0 +1,225 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  /* width: 1250px; */
+  width: 500px;
+  height: 570px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.body-container {
+  display: flex;
+}
+
+.right-section {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  font-family: "aesthet-nova", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  left: 10px;
+  top: 10px;
+  color: white;
+}
+
+.left-section {
+  background-color: white;
+  width: 800px;
+}
+
+.heading-section {
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  margin-left: 70px;
+  margin-top: 70px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.asterik-rule {
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  margin-left: 70px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.form-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+input {
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  border: 0;
+  border-bottom: 2px solid rgb(172, 170, 170);
+  outline: none;
+  font-size: 1em;
+}
+
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  color: #999;
+  cursor: text;
+  transition: 0.3s ease-in-out;
+}
+
+input, label {
+  font-size: 1em;
+  width: 220px;
+  height: 18px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  color: #444444;
+  font-size: 0.75em;
+  top: -18px;
+  pointer-events: none;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(56, 41, 147);
+}
+
+input:focus:not(:placeholder-shown) {
+  border-bottom: 2px solid rgb(56, 41, 147);
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+label span {
+  color: red;
+}
+
+.error-msg {
+  display: none;
+}
+
+input[type="email"]:not(:placeholder-shown):not(:focus):invalid ~ .error-msg{
+  display: block;
+  margin-top: 10px;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  font-size: 13px;
+  color:rgb(255, 102, 102);
+}
+
+input:not(:placeholder-shown):not(:focus):valid {
+  border-bottom: 2px solid rgb(3, 131, 50);
+}
+
+.error-pwd,
+.success-pwd {
+  display: none;
+}
+
+input[type="password"]:focus:invalid ~ .error-pwd {
+  display: block;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+input[type="password"]:focus:valid ~ .success-pwd {
+  display: block;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+input[type="password"]:not(:placeholder-shown):not(:focus):invalid ~ .error-pwd{
+  display: block;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  font-size: 13px;
+  margin-top: 10px;
+  color:rgb(255, 102, 102);
+}
+
+.message {
+  display: none;
+}
+
+.confirm-password:not(:placeholder-shown):not(:focus):invalid ~ .message {
+  display: block;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgb(255, 102, 102);
+}
+
+.confirmPwd-error {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.btn {
+  border: none;
+  background-color: #DBC4F0;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 70px;
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.log-in {
+  margin-top: 20px;
+  margin-left: 70px;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+}
+
+.credit-creator {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "vinila-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400, "wdth" 100;
+  font-weight: 100;
+}
+
+
+a {
+  text-decoration: none;
+}
+

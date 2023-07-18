@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wvs1cbe.css">
+  <script src="index.js" defer></script>
+  <title>Sign-up form</title>
+</head>
+<body>
+  <!-- <a href="https://www.freepik.com/free-vector/endpoint-concept-illustration_9233784.htm#query=networking%20service&position=19&from_view=search&track=ais">Image by storyset</a> on Freepik -->
+  <div class="body-container">
+    <div class="right-section">
+      <div class="logo">ConnectX</div>
+      <div class="credit-creator">
+        <a href="https://www.freepik.com/free-vector/teamwork-concept-background-3d_6144599.htm#query=collaborate&position=3&from_view=search&track=sph">Image by pikisuperstar</a> on Freepik
+      </div>
+      <img src="photos/purple-network.jpg" alt="">
+    </div>
+
+    <div class="left-section">
+      <div class="heading-section">Get started</div>
+      <div class="asterik-rule">Fields marked with an asterik(*) are required</div>
+
+      <form id="form">
+        <div class="form-section">
+          <div class="left-form">
+            <div class="form-group">
+              <input type="text" id="first-name" name="first-name" placeholder=" " required>
+              <label for="first-name">FIRST NAME<span>*</span></label>
+            </div>
+  
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <label for="email">EMAIL<span>*</span></label>
+              <span class="error-msg"> ⚠ Please enter a valid email address</span>
+            </div>
+  
+            <div class="form-group">
+              <input type="password" id="pwd" name="password" placeholder=" " pattern="^(?=.*\S).{8,}$" required>
+              <label for="pwd">PASSWORD<span>*</span></label>
+              <span class="error-pwd">✗ minimum of 8 characters</span>
+              <span class="success-pwd"> ✔ minimum of 8 characters</span>
+            </div>
+          </div>
+
+          <div class="right-form">
+            <div class="form-group">
+              <input type="text" id="last-name" name="last-name" placeholder=" ">
+              <label for="last-name">LAST NAME</label>
+            </div>
+    
+            <div class="form-group">
+              <input type="tel" id="tel" name="phone-number" placeholder=" ">
+              <label for="tel">PHONE NUMBER</label>
+            </div>
+            
+            <div class="form-group">
+              <input class="confirm-password" type="password" id="confirm-pwd" name="confirm-password" placeholder=" " required>
+              <label for="confirm-pwd">CONFIRM PASSWORD<span>*</span></label>
+              <div class="message">⚠ Password mismatch</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn" type="submit" id="submit-btn">Create Account</button>
+      </form>
+
+      <div class="log-in">
+        Already have an account?<a href="">Log in</a>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
